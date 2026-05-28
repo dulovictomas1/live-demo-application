@@ -142,7 +142,7 @@
                                 <div class="item">
                                     <a href="{{ route('service.page', $item->slug) }}">
                                         <div class="img-service">
-                                            <img src="http://localhost/4g-zadanie/public/images/img6.jpg" alt="">
+                                            <img src="/public/images/img6.jpg" alt="">
                                         </div>
                                         <h3>{{ $item->name }}</h3>
                                     </a>

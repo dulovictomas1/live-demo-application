@@ -90,8 +90,8 @@ html {
 
 .logo {
   background: white;
-    -webkit-mask: url(http://localhost/4g-zadanie/public/images/diamon.svg) no-repeat center;
-    mask: url(http://localhost/4g-zadanie/public/images/diamon.svg) no-repeat center;
+    -webkit-mask: url(/public/images/diamon.svg) no-repeat center;
+    mask: url(/public/images/diamon.svg) no-repeat center;
     width: 40px;
     height: 40px;
     -webkit-mask-size: contain;
@@ -106,7 +106,7 @@ html {
 }
 
 .hero {
-    background: url(http://localhost/4g-zadanie/public/images/digital-hero.jpg), rgba(0,0,0,0.4);
+    background: url(/public/images/digital-hero.jpg), rgba(0,0,0,0.4);
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-position: center;
@@ -163,7 +163,7 @@ html {
 }
 
 .toto {
-    width: 27rem;
+    width: 30rem;
     margin-right: 1rem;
     color: white;
     font-size: 3rem;
@@ -227,7 +227,7 @@ html {
 }
 
 .img1 {
-    background: url(http://localhost/4g-zadanie/public/images/digital-hero.jpg), rgba(0,0,0,0.4);
+    background: url(/public/images/digital-hero.jpg), rgba(0,0,0,0.4);
     background-blend-mode: multiply;
     background-size: cover;
     height: 100%;
@@ -246,7 +246,7 @@ html {
 }
 
 .img2 {
-    background: url(http://localhost/4g-zadanie/public/images/img5.jpg), rgba(133, 62, 255, 0.4);
+    background: url(/public/images/img5.jpg), rgba(133, 62, 255, 0.4);
     background-blend-mode: multiply;
     background-size: cover;
     height: 100%;
@@ -265,7 +265,7 @@ html {
 }
 
 .img3 {
-    background: url(http://localhost/4g-zadanie/public/images/img6.jpg), rgba(56, 247, 132, 0.4);
+    background: url(/public/images/img6.jpg), rgba(56, 247, 132, 0.4);
     background-blend-mode: multiply;
     background-size: cover;
     height: 100%;
@@ -284,7 +284,7 @@ html {
 }
 
 .img4 {
-    background: url(http://localhost/4g-zadanie/public/images/img7.jpg), rgba(62, 229, 255, 0.4);
+    background: url(/public/images/img7.jpg), rgba(62, 229, 255, 0.4);
     background-blend-mode: multiply;
     background-size: cover;
     height: 100%;
@@ -452,7 +452,7 @@ html {
 }
 
 .bottom-hero {
-    background: url(http://localhost/4g-zadanie/public/images/img9.jpg), rgba(0,0,0,0.5);
+    background: url(/public/images/img9.jpg), rgba(0,0,0,0.5);
     background-blend-mode: multiply;
     height: 70vh;
     background-position: center;
