@@ -25,14 +25,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (select.value === "txt_blok") {
 
-            const response = await fetch(`http://localhost/4g-zadanie/public/admin/pages/sections/text-block?index=${sectionIndex}`);
+            const response = await fetch(`/admin/pages/sections/text-block?index=${sectionIndex}`);
             const html = await response.text();
 
             wrapper.insertAdjacentHTML("beforeend", html);
 
             sectionIndex++;
         } else if (select.value === "half_blok") {
-            const response = await fetch(`http://localhost/4g-zadanie/public/admin/pages/sections/half-block?index=${sectionIndex}`);
+            const response = await fetch(`/admin/pages/sections/half-block?index=${sectionIndex}`);
             const html = await response.text();
 
             wrapper.insertAdjacentHTML("beforeend", html);
