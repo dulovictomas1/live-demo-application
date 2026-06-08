@@ -1,6 +1,30 @@
 {
+  "public/images/diamon.svg": {
+    "file": "assets/diamon-DUtdhm-x.svg",
+    "src": "public/images/diamon.svg"
+  },
+  "public/images/digital-hero.jpg": {
+    "file": "assets/digital-hero-Bf8FOvA3.jpg",
+    "src": "public/images/digital-hero.jpg"
+  },
+  "public/images/img5.jpg": {
+    "file": "assets/img5-BSCcfCul.jpg",
+    "src": "public/images/img5.jpg"
+  },
+  "public/images/img6.jpg": {
+    "file": "assets/img6-BYSPUtku.jpg",
+    "src": "public/images/img6.jpg"
+  },
+  "public/images/img7.jpg": {
+    "file": "assets/img7-CGBOzHFp.jpg",
+    "src": "public/images/img7.jpg"
+  },
+  "public/images/img9.jpg": {
+    "file": "assets/img9-B9L1beFA.jpg",
+    "src": "public/images/img9.jpg"
+  },
   "resources/css/app.css": {
-    "file": "assets/app-wtx7k2cj.css",
+    "file": "assets/app-CJHnqFll.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "name": "app",
@@ -9,7 +33,7 @@
     ]
   },
   "resources/js/app.js": {
-    "file": "assets/app-BL6n4RMA.js",
+    "file": "assets/app-CqxGnbQt.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true

@@ -6,28 +6,72 @@ window.Alpine = Alpine;
 
 Alpine.start();
 
+document.addEventListener("DOMContentLoaded", function () {
 
+    const btnAdd = document.querySelector("#btn_add_section");
+    const formAddsection = document.querySelector("#form-add-sections");
+    const btnCreateSection = document.querySelector("#btn_add_section_new");
+    const select = document.querySelector('select[name="sections"]');
+    const wrapper = document.querySelector("#sections-wrapper");
+
+    //let sectionIndex = 0;
+    let sectionIndex = window.sectionIndex ?? 0;
+
+    btnAdd.addEventListener("click", function () {
+        formAddsection.style.display = "block";
+    });
+
+    btnCreateSection.addEventListener("click", async function () {
+
+        if (select.value === "txt_blok") {
+
+            const response = await fetch(`http://localhost/4g-zadanie/public/admin/pages/sections/text-block?index=${sectionIndex}`);
+            const html = await response.text();
+
+            wrapper.insertAdjacentHTML("beforeend", html);
+
+            sectionIndex++;
+        } else if (select.value === "half_blok") {
+            const response = await fetch(`http://localhost/4g-zadanie/public/admin/pages/sections/half-block?index=${sectionIndex}`);
+            const html = await response.text();
+
+            wrapper.insertAdjacentHTML("beforeend", html);
+
+            sectionIndex++;
+        }
+    });
+
+});
+
+document.addEventListener('click', function(e) {
+
+    if (e.target.classList.contains('remove-section')) {
+        e.target.closest('.section-item').remove();
+    }
+
+});
 
 
 //Mobile menu
 document.addEventListener("DOMContentLoaded", function () {
 
     const toggle = document.querySelector(".menu-toggle");
-    const toggle2 = document.querySelector(".menu-toggle2");
     const nav = document.querySelector(".main-nav");
-    const header = document.querySelector(".site-header");
 
-    // Otváranie / zatváranie menu
-    toggle.addEventListener("click", function () {
-        toggle.classList.toggle("active");
-        nav.classList.toggle("active");
-    });
+    if (toggle && nav) {
+        toggle.addEventListener("click", function () {
+            toggle.classList.toggle("active");
+            nav.classList.toggle("active");
+        });
 
-    // Otváranie / zatváranie menu
-    toggle2.addEventListener("click", function () {
-        toggle.classList.toggle("active");
-        nav.classList.toggle("active");
-    });
+    }
+
+    document.querySelectorAll(".submenu-toggle").forEach(function (submenuToggle) {
+        submenuToggle.addEventListener("click", function () {
+            const parent = submenuToggle.closest(".menu-item-has-children");
+            parent.classList.toggle("active");
+        });
+});
 
 });
 
@@ -73,4 +117,3 @@ nextBtn.addEventListener('click', () => {
 prevBtn.addEventListener('click', () => {
   carousel.scrollBy({ left: -itemWidth, behavior: 'smooth' });
 });
-

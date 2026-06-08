@@ -42,6 +42,10 @@
                             Služby
                         </x-dropdown-link>
 
+                        <x-dropdown-link :href="route('pages.index')">
+                            Stránky
+                        </x-dropdown-link>
+
                         <x-dropdown-link :href="route('messages.index')">
                             Správy
                         </x-dropdown-link>
